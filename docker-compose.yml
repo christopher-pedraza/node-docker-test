@@ -1,0 +1,8 @@
+services:
+    appname:
+        build: .
+        ports:
+            # Se mapea el puerto 3001 del contenedor al puerto 3001 del host
+            # Izquierda -> Puerto del contenedor
+            # Derecha -> Puerto del host
+            - 3001:3001
